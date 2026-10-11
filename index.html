@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f8f2">
+    <title>PetCare — La boutique des animaux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <div class="announcement">
+        <strong>Livraison offerte</strong>
+        dès 99 DT · Des essentiels choisis avec soin
+    </div>
+    <div class="nav-wrap">
+        <nav>
+            <a class="brand" href="#accueil">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="images/logo-chat.jpg" id="logo_chat" alt="">
+                </span>PetCare
+            </a>
+            <div class="nav-links">
+                <a href="#boutique">La boutique</a>
+                <a href="#boutique" data-category-link="Alimentation">Alimentation</a>
+                <a href="#boutique" data-category-link="Jouets">Jouets</a>
+                <a href="#boutique" data-category-link="Soins">Soins</a>
+            </div>
+            <button class="cart-button" id="cart-toggle" aria-expanded="false" aria-controls="cart-panel">Panier <span
+                    class="cart-count" id="cart-count">0</span></button>
+        </nav>
+    </div>
+    <aside class="cart-panel" id="cart-panel" aria-label="Contenu du panier"></aside>
+    <main>
+        <section class="hero" id="accueil">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">Le quotidien en mieux</p>
+                    <h1>Pour leurs petites et grandes aventures.</h1>
+                    <p>De bons essentiels, choisis pour leur bien-être et adaptés à chaque étape de leur vie.</p>
+                    <a class="primary-button" href="#boutique">Découvrir la sélection <span
+                            aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-image" role="img" aria-label="Chien de compagnie heureux"></div>
+            </div>
+        </section>
+        <section class="benefits" aria-label="Nos engagements">
+            <div class="benefit"><span class="benefit-icon" aria-hidden="true">✳</span>
+                <div><strong>Bien choisis, tout simplement</strong><span>Des essentiels faits pour durer</span></div>
+            </div>
+            <div class="benefit"><span class="benefit-icon" aria-hidden="true">♡</span>
+                <div><strong>Pour chaque compagnon</strong><span>Des repères clairs selon ses besoins</span></div>
+            </div>
+            <div class="benefit"><span class="benefit-icon" aria-hidden="true">↗</span>
+                <div><strong>Expédition rapide</strong><span>Offerte dès 99 DT d'achat</span></div>
+            </div>
+        </section>
+        <section class="shop" id="boutique">
+            <div class="shop-heading">
+                <div>
+                    <p class="eyebrow">La sélection du moment</p>
+                    <h2>Leur bonheur, au quotidien.</h2>
+                    <p>Des produits avec les bonnes infos, pour choisir en confiance.</p>
+                </div>
+                <input class="search" id="search" type="search" placeholder="Rechercher un produit..."
+                    aria-label="Rechercher un produit">
+            </div>
+                <h2 id="h2_annimal_selectionne">Pour qui souhaitez-vous commander ?</h2>
+                <table>
+                    <tr>
+                        <td><a href="chien.html"><img src="images/chien.jpg"  class="animal" alt="Chien"></a></td>
+                        <td><a href="lapin.html"><img src="images/lapin.jpg"  class="animal" alt="Lapin"></a></td>
+                        <td><a href="chat.html"><img src="images/chat.webp"   class="animal" alt="Chat"></a></td>
+                        <td><a href="oiseau.html"><img src="images/oiseau.jpg" class="animal" alt="Oiseau"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Chien</td>
+                        <td>Lapin</td>
+                        <td>Chat</td>
+                        <td>Oiseau</td>
+                    </tr>
+                </table>
+
+            <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <section class="footer-services" aria-label="Nos services">
+            <article class="footer-service">
+                <span class="service-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none"><path d="M4 12h25v23H4zM29 20h9l7 8v7H29z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M34 21v8h10M4 18h16M4 24h12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="14" cy="37" r="4" fill="currentColor"/><circle cx="36" cy="37" r="4" fill="currentColor"/></svg>
+                </span>
+                <h2>Livraison</h2>
+                <p>Gratuite à partir de 99 DT d'achats</p>
+            </article>
+            <article class="footer-service">
+                <span class="service-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none"><rect x="5" y="9" width="38" height="30" rx="5" stroke="currentColor" stroke-width="3"/><path d="M5 18h38" stroke="currentColor" stroke-width="3"/><path d="M11 31h10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                </span>
+                <h2>Paiement en ligne</h2>
+                <p>Payez en ligne ou à la réception de votre commande</p>
+            </article>
+            <article class="footer-service">
+                <span class="service-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="3"/><circle cx="17" cy="20" r="2.5" fill="currentColor"/><circle cx="31" cy="20" r="2.5" fill="currentColor"/><path d="M15 28c2.2 4 5.2 6 9 6s6.8-2 9-6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                </span>
+                <h2>Retour sous 5 jours</h2>
+                <p>Vous pouvez retourner vos articles dans les 5 jours après votre commande</p>
+            </article>
+            <article class="footer-service">
+                <span class="service-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="currentColor"><path d="M14.2 5.5c1.2-.5 2.5.1 3 1.3l4 9.2c.5 1.1.2 2.4-.7 3.2l-3.6 3a29.8 29.8 0 0 0 8.9 8.9l3-3.6c.8-.9 2.1-1.2 3.2-.7l9.2 4c1.2.5 1.8 1.8 1.3 3l-2.1 6.2c-.4 1.1-1.5 1.8-2.7 1.7C19.2 40.1 7.9 28.8 6.3 10.3c-.1-1.2.6-2.3 1.7-2.7l6.2-2.1Z"/></svg>
+                </span>
+                <h2>Service client</h2>
+                <p>Disponible 7j/7 de 9h à 21h<br><a href="tel:+21651424424">55 123 222</a></p>
+            </article>
+        </section>
+        <section class="footer-payment" aria-labelledby="payment-title">
+            <h2 id="payment-title">PAIEMENT SÉCURISÉ</h2>
+            <p>Transactions sécurisées par nos partenaires bancaires</p>
+            <div class="payment-methods" aria-label="Moyens de paiement acceptés">
+                <span class="payment-logo cash">CASH <small>à la livraison</small></span>
+                <span class="payment-logo visa">VISA</span>
+                <span class="payment-logo mastercard"><span aria-hidden="true">●●</span><small>Mastercard</small></span>
+                <span class="payment-logo cib">CIB</span>
+                <span class="payment-logo secure">Mastercard<br><strong>SecureCode</strong></span>
+                <span class="payment-logo verified">Verified by<br><strong>VISA</strong></span>
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <a class="footer-brand" href="#accueil"><span class="brand-mark" aria-hidden="true"><img src="images/logo-chat.jpg" id="logo_chat" alt=""></span>PetCare</a>
+            <p>Pour les compagnons qui font la maison.</p>
+            <small>© 2026 PetCare. Tous droits réservés.</small>
+        </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+
+</html>
